@@ -6,7 +6,7 @@ import App from "./App.jsx";
 import Home from "./components/Home.jsx";
 import SavedRecipes from "./components/SavedRecipes.jsx";
 import Login from "./components/Login.jsx";
-import Register from "./components/Register.jsx";
+import Signin from "./components/Signin.jsx";
 import Profile from "./components/Profile.jsx";
 import AddRecipesForm from "./components/AddRecipesForm.jsx";
 
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       { path: "/add-recipe", element: <AddRecipesForm /> },
       { path: "/saved", element: <SavedRecipes /> },
       { path: "/login", element: <Login /> },
-      { path: "/register", element: <Register /> },
+      { path: "/signin", element:<Signin/>},
     ],
   },
 ]);

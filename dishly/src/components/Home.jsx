@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Hero from "../assets/hero.png";
 
 export default function Home() {
@@ -24,12 +25,12 @@ export default function Home() {
             </p>
           </div>
           <div className="flex px-4 py-6 items-center gap-4 ">
-            <button className="px-4 py-2 bg-emerald-700 font4 text-white rounded-full border-2 border-emerald-700 shadow-md hover:text-gray-800 hover:bg-gray-50">
+            <NavLink to="/add-recipe" className="px-4 py-2 bg-emerald-700 font4 text-white rounded-full border-2 border-emerald-700 shadow-md transform duration-200 hover:scale-110">
               Explore Recipes
-            </button>
-            <button className="px-4 py-2 bg-gray-50 text-gray-800 font4  rounded-full border-2 border-emerald-700 shadow-md hover:bg-emerald-700 hover:text-white">
+            </NavLink>
+            <a href="#recipes" className="px-4 py-2 bg-gray-50 text-gray-800 font4  rounded-full border-2 border-emerald-700 shadow-md transform duration-200 hover:scale-110">
               Share Your Recipe
-            </button>
+            </a>
           </div>
         </div>
         <div className="md:visible">
